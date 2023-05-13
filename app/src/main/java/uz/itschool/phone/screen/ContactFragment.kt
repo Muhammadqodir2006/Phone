@@ -12,11 +12,11 @@ import uz.itschool.phone.database.AppDatabase
 import uz.itschool.phone.databinding.FragmentContactBinding
 
 class ContactFragment : Fragment() {
-    val appDatabase = AppDatabase.getInstance(requireContext())
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        val appDatabase = AppDatabase.getInstance(requireContext())
         val binding = FragmentContactBinding.inflate(inflater, container, false)
         val adapter = ContactRecyclerAdapter(appDatabase, object : ContactRecyclerAdapter.OnCall{
             override fun call(number: String) {
