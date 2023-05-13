@@ -12,6 +12,5 @@ data class Contact(
     var firstName: String,
     @ColumnInfo("last_name")
     var lastName:String,
-    @ColumnInfo("group_id")
-    var groupId:Int
+    var number:String
 )

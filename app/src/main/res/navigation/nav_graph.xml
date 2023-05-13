@@ -18,5 +18,14 @@
         android:id="@+id/bodyFragment"
         android:name="uz.itschool.phone.screen.BodyFragment"
         android:label="body_fragment"
-        tools:layout="@layout/body_fragment" />
+        tools:layout="@layout/body_fragment" >
+        <action
+            android:id="@+id/action_bodyFragment_to_addContactFragment"
+            app:destination="@id/addContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addContactFragment"
+        android:name="uz.itschool.phone.screen.AddContactFragment"
+        android:label="fragment_add_contact"
+        tools:layout="@layout/fragment_add_contact" />
 </navigation>
